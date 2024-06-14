@@ -183,5 +183,20 @@
             },
         })
     </script>
+
+    <script>
+      const offCanvas = document.querySelector('.offcanvas');
+      const stickyTop = document.querySelector('.sticky-top');
+      const hamburger = document.querySelector('.navbar-toggler-icon')
+
+      hamburger.addEventListener('click', function(){
+        stickyTop.style.overflow = 'visible';
+      })
+
+      offCanvas.addEventListener('hidden.bs.offcanvas', function(){
+        stickyTop.style.overflow = 'hidden';
+      })
+
+    </script>
   </body>
 </html>
