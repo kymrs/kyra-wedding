@@ -203,6 +203,10 @@ body {
         font-size: 65%;
     }
 
+    .sticky-top{
+        overflow: hidden;
+    }
+
     .mynavbar .nav-link{
         font-size: 2rem;
         text-align: center;
